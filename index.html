@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="left">
+          <img src="./img/iconsInfo.png" alt="Informative Icons" />
+          <h1>Rock Paper Scissors</h1>
+        </div>
+<div class="mid">
+  <h5>Originally Developed by <br> Kiran Mahajan</h5>
+</div>
+        <div class="right">
+          <div class="circle"><h1>10</h1></div>
+          <p>Remaining Attempts</p>
+        </div>
+      </div>
+      <h1 class="instructions" id="instructions">Select anyone from below</h1>
+      <div id="middle" class="middle">
+        <img id="rock" class="options" src="./img/rock.png" alt="Rock" />
+        <img id="paper" class="options" src="./img/paper.png" alt="Paper" />
+        <img
+          id="scissors"
+          class="options"
+          src="./img/scissors.png"
+          alt="Scissors"
+        />
+      </div>
+
+      <div id="bottom" class="bottom">
+        <div class="user">
+          <h1>User</h1>
+          <img id="userPicked" src="./img/rock.png" alt="Rock" />
+        </div>
+
+        <div class="eachResult">
+          <p>Yay! You Won This Round</p>
+          <button id="nextRound">Next Round</button>
+        </div>
+
+        <div class="cpu">
+          <h1>CPU</h1>
+          <img id="cpuPicked" src="./img/paper.png" alt="Rock" />
+        </div>
+      </div>
+      <div id="result" class="result">
+        <div class="userScore">
+          <h2>User Score</h2>
+          <h1>0</h1>
+        </div>
+
+        <div class="finalResult">
+          <p>You Win The Game!<br/>CPU is a looser lol</p>
+          <button onclick="window.location.reload();" id="playAgain">Play Again</button>
+        </div>
+
+        <div class="cpuScore">
+          <h2>CPU Score</h2>
+          <h1>0</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
